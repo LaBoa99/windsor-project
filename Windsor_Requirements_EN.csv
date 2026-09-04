@@ -1,0 +1,36 @@
+#,ID,Text,Description
+1,RF-AUTH-001,User registration,The system must allow clients and providers to register by entering their basic information and access credentials.
+2,RF-AUTH-002,JWT authentication,The system must validate user credentials and generate a JWT token to manage secure sessions.
+3,RF-AUTH-003,Role-based access control,"The system must restrict views and actions according to the assigned role (Administrator, Client, Provider, Security Guard)."
+4,RF-AUTH-004,Password recovery,The system must allow users to recover access through a temporary token sent to their registered email.
+5,RF-SAL-001,Event hall registration,"The system must allow the Administrator to register halls, defining name, location, maximum capacity, and hourly cost."
+6,RF-SAL-002,Hourly availability lookup,The system must allow checking a hall's availability on any date of the year, filtering by specific time ranges.
+7,RF-SAL-003,Booking schedule,The system must record bookings by time range, preventing overlap or duplicate schedules for the same hall.
+8,RF-SAL-004,Hall image upload,The system must allow uploading and storing photographs of the halls.
+9,RF-SAL-005,Date blocking for maintenance,The system must allow the Administrator to disable halls or specific time ranges on given days for maintenance or private events.
+10,RF-CLI-001,Client profile management,"The system must allow the Client to view and update their personal data, contact information, and notification methods."
+11,RF-CLI-002,Event history,"The system must show the Client a detailed list of their past, active, and cancelled events with their respective invoices or summaries."
+12,RF-CLI-003,Event management panel,The system must provide the Client with a panel to manage the guest list and the hired provider services for an active event.
+13,RF-PROV-001,Provider service registration,"The system must allow Providers to register and update their services (catering, entertainment, music, decoration) with descriptions and prices."
+14,RF-PROV-002,Linking services to events,The system must allow attaching one or more provider services to an event hall booking.
+15,RF-PROV-003,Provider schedule lookup,"The system must offer Providers a calendar to view the dates, times, and halls where they must deliver their services."
+16,RF-PROV-004,Provider rating,The system must allow the Client to rate and leave a review of the services provided by the Provider once the event has concluded.
+17,RF-COMP-001,Total purchase cost calculation,The system must calculate the total amount by adding the hourly hall cost and the accumulated cost of the selected provider services.
+18,RF-COMP-002,Purchase order registration,The system must generate and store the purchase order in pending or paid status, associating it with the client and the event.
+19,RF-COMP-003,Transaction status change,"The system must allow the Administrator or the payment gateway to update the payment status (Pending, Completed, Refunded)."
+20,RF-COMP-004,Purchase receipt generation,The system must generate a detailed summary of the purchase in digital format for the client to view or download.
+21,RF-INV-001,Guest list upload,The system must allow the Client to enter guests individually or perform a bulk upload with contact details.
+22,RF-INV-002,Unique QR code generation,The system must generate a unique hash and represent it graphically as an exclusive QR code for each guest and registered event.
+23,RF-INV-003,QR scanning and validation,The system must allow the Security Guard to validate the authenticity of the QR code presented by the guest through the web application.
+24,RF-INV-004,Real-time access control,"The system must mark the QR code as ""Used"" after the first successful scan to prevent the same entry from being reused."
+25,RF-INV-005,QR code resend,The system must allow the Client to individually resend the QR-coded ticket if a guest loses it.
+26,RF-MAIL-001,Purchase confirmation notification,The system must send an automatic email to the Client confirming the hall booking and the hired services.
+27,RF-MAIL-002,Bulk QR access delivery,The system must automatically send invitations with the packaged QR code to the email address of each registered guest.
+28,RF-MAIL-003,Schedule change notification,"The system must notify Clients, Providers, and Guests by email of any change in date or cancellation of the event."
+29,RF-MAIL-004,Administration alerts,The system must notify the Administrator when a new Provider requests registration or when a failure occurs in external integrations.
+30,RNF-SEG-001,Reverse proxy concealment,The NestJS monolithic backend must operate behind a Proxy server (Nginx) without publicly exposing its private IP or ports.
+31,RNF-SEG-002,Database isolation,"The database must be hosted on a physically independent server with no public access, accepting connections only from the backend's IP."
+32,RNF-PER-002,API response time,Requests processed by the NestJS routes must respond with an average time under 300 ms under normal traffic conditions.
+33,RNF-USAB-001,Responsive interface,The Angular web application must adapt its layout to desktop browsers and mobile devices to facilitate QR reading at the door.
+34,RNF-DISP-001,Service availability,The system must maintain 99.5% operational availability throughout the year to guarantee real-time queries and validations.
+35,RNF-COMP-001,Scanning compatibility,"The QR validation module must be compatible with the cameras of mobile devices running modern browsers (Chrome, Safari)."
