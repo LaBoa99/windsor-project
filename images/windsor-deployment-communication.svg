@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" role="img">
+<title>Windsor deployment communication</title>
+<rect width="1000" height="440" fill="#ffffff"/>
+<rect x="10" y="10" width="190" height="420" rx="8" fill="#fafafa" stroke="#6b6b6b" stroke-width="1.2" stroke-dasharray="6 4"/><text x="105.0" y="32" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#6b6b6b" text-anchor="middle">Internet</text>
+<rect x="215" y="10" width="290" height="420" rx="8" fill="#fafafa" stroke="#6b6b6b" stroke-width="1.2" stroke-dasharray="6 4"/><text x="360.0" y="32" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#6b6b6b" text-anchor="middle">Vultr · Mexico City</text>
+<rect x="520" y="10" width="470" height="420" rx="8" fill="#fafafa" stroke="#6b6b6b" stroke-width="1.2" stroke-dasharray="6 4"/><text x="755.0" y="32" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#6b6b6b" text-anchor="middle">Hall LAN · no inbound ports open</text>
+<rect x="485" y="109" width="125" height="32" fill="#dcdcdc" stroke="#6b6b6b" stroke-width="1"/>
+<rect x="25" y="45" width="160" height="56" rx="6" fill="#ffffff" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="105.0" y="70.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">Client</text>
+<text x="105.0" y="88.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">browser or phone</text>
+<rect x="25" y="150" width="160" height="62" rx="6" fill="#ffffff" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="105.0" y="178.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">Porkbun DNS</text>
+<text x="105.0" y="196.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">saloneswindsor.mx</text>
+<path d="M105,101 L105,150" fill="none" stroke="#3d3d3d" stroke-width="1.6" stroke-dasharray="5 4"/>
+<polygon points="105.0,150.0 100.0,139.0 110.0,139.0" fill="#3d3d3d"/>
+<text x="113" y="130" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400" fill="#6b6b6b" text-anchor="start">name lookup</text>
+<rect x="25" y="335" width="160" height="60" rx="6" fill="#ffffff" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="105.0" y="362.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">SendGrid</text>
+<text x="105.0" y="380.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">SMTP service</text>
+<rect x="270" y="70" width="215" height="110" rx="6" fill="#f2f2f2" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="377.5" y="114.0" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">Vultr VPS vc2-1c-1gb</text>
+<text x="377.5" y="132.0" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">Nginx reverse proxy</text>
+<text x="377.5" y="149.0" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">DDoS protection</text>
+<rect x="610" y="70" width="190" height="110" rx="6" fill="#f2f2f2" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="705.0" y="122.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">NestJS monolith</text>
+<text x="705.0" y="140.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">port 3000</text>
+<rect x="850" y="85" width="125" height="80" rx="6" fill="#f2f2f2" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="912.5" y="122.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">PostgreSQL</text>
+<text x="912.5" y="140.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">separate server</text>
+<rect x="650" y="275" width="230" height="70" rx="6" fill="#ffffff" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="765.0" y="307.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">Staff and security guards</text>
+<text x="765.0" y="325.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">on the local network</text>
+<path d="M185,85 L270,85" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="270.0,85.0 259.0,90.0 259.0,80.0" fill="#3d3d3d"/>
+<polygon points="185.0,85.0 196.0,80.0 196.0,90.0" fill="#3d3d3d"/>
+<text x="227" y="75" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1a1a1a" text-anchor="middle">HTTPS 443</text>
+<path d="M485,125 L610,125" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="610.0,125.0 599.0,130.0 599.0,120.0" fill="#3d3d3d"/>
+<polygon points="485.0,125.0 496.0,120.0 496.0,130.0" fill="#3d3d3d"/>
+<text x="547" y="101" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1a1a1a" text-anchor="middle">HTTP 3000</text>
+<text x="547" y="205" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">VPN tunnel, opened</text>
+<text x="547" y="222" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">outbound by the LAN</text>
+<path d="M547,190 L547,143" fill="none" stroke="#6b6b6b" stroke-width="1"/>
+<path d="M800,125 L850,125" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="850.0,125.0 839.0,130.0 839.0,120.0" fill="#3d3d3d"/>
+<polygon points="800.0,125.0 811.0,120.0 811.0,130.0" fill="#3d3d3d"/>
+<text x="825" y="115" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1a1a1a" text-anchor="middle">5432</text>
+<path d="M765,275 L765,180" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="765.0,180.0 770.0,191.0 760.0,191.0" fill="#3d3d3d"/>
+<text x="775" y="232" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1a1a1a" text-anchor="start">local network</text>
+<path d="M630,180 L630,365 L185,365" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="185.0,365.0 196.0,360.0 196.0,370.0" fill="#3d3d3d"/>
+<text x="410" y="356" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#1a1a1a" text-anchor="middle">SMTP</text>
+</svg>

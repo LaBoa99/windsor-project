@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" role="img">
+<title>Windsor module communication for the booking flow</title>
+<rect width="1000" height="440" fill="#ffffff"/>
+<rect x="335" y="10" width="510" height="420" rx="8" fill="#fafafa" stroke="#6b6b6b" stroke-width="1.2" stroke-dasharray="6 4"/><text x="590.0" y="32" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#6b6b6b" text-anchor="middle">NestJS monolith</text>
+<rect x="15" y="60" width="120" height="64" rx="6" fill="#ffffff" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="75.0" y="89.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">Client</text>
+<text x="75.0" y="107.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">browser</text>
+<rect x="180" y="60" width="120" height="64" rx="6" fill="#ffffff" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="240.0" y="89.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">Nginx</text>
+<text x="240.0" y="107.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">Vultr VPS</text>
+<rect x="370" y="60" width="190" height="64" rx="6" fill="#f2f2f2" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="465.0" y="89.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">AuthModule</text>
+<text x="465.0" y="107.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">JWT, roles</text>
+<rect x="620" y="60" width="190" height="64" rx="6" fill="#f2f2f2" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="715.0" y="89.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">HallsModule</text>
+<text x="715.0" y="107.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">catalog, bookings</text>
+<rect x="370" y="190" width="190" height="64" rx="6" fill="#f2f2f2" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="465.0" y="219.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">SupplierModule</text>
+<text x="465.0" y="237.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">supplier services</text>
+<rect x="620" y="190" width="190" height="64" rx="6" fill="#f2f2f2" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="715.0" y="219.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">PurchasesModule</text>
+<text x="715.0" y="237.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">cost, purchase orders</text>
+<rect x="370" y="320" width="190" height="64" rx="6" fill="#f2f2f2" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="465.0" y="349.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">GuestsModule</text>
+<text x="465.0" y="367.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">guest list, QR codes</text>
+<rect x="620" y="320" width="190" height="64" rx="6" fill="#f2f2f2" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="715.0" y="349.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">MailModule</text>
+<text x="715.0" y="367.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">notifications</text>
+<rect x="875" y="190" width="115" height="64" rx="6" fill="#ffffff" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="932.5" y="219.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">PostgreSQL</text>
+<text x="932.5" y="237.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">port 5432</text>
+<rect x="875" y="320" width="115" height="64" rx="6" fill="#ffffff" stroke="#3d3d3d" stroke-width="1.5"/>
+<text x="932.5" y="349.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#1a1a1a" text-anchor="middle">SendGrid</text>
+<text x="932.5" y="367.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">SMTP</text>
+<path d="M135,92 L180,92" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="180.0,92.0 169.0,97.0 169.0,87.0" fill="#3d3d3d"/>
+<circle cx="157" cy="74" r="11" fill="#3d3d3d"/><text x="157" y="78.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<path d="M300,92 L370,92" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="370.0,92.0 359.0,97.0 359.0,87.0" fill="#3d3d3d"/>
+<circle cx="311" cy="74" r="11" fill="#3d3d3d"/><text x="311" y="78.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<path d="M560,92 L620,92" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="620.0,92.0 609.0,97.0 609.0,87.0" fill="#3d3d3d"/>
+<circle cx="590" cy="74" r="11" fill="#3d3d3d"/><text x="590" y="78.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<path d="M715,124 L715,190" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="715.0,190.0 710.0,179.0 720.0,179.0" fill="#3d3d3d"/>
+<circle cx="735" cy="157" r="11" fill="#3d3d3d"/><text x="735" y="161.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<path d="M560,222 L620,222" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="620.0,222.0 609.0,227.0 609.0,217.0" fill="#3d3d3d"/>
+<circle cx="590" cy="204" r="11" fill="#3d3d3d"/><text x="590" y="208.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+<path d="M715,254 L715,320" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="715.0,320.0 710.0,309.0 720.0,309.0" fill="#3d3d3d"/>
+<circle cx="735" cy="287" r="11" fill="#3d3d3d"/><text x="735" y="291.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+<path d="M810,352 L875,352" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="875.0,352.0 864.0,357.0 864.0,347.0" fill="#3d3d3d"/>
+<circle cx="860" cy="334" r="11" fill="#3d3d3d"/><text x="860" y="338.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#ffffff" text-anchor="middle">7</text>
+<path d="M560,352 L620,352" fill="none" stroke="#3d3d3d" stroke-width="1.6" stroke-dasharray="5 4"/>
+<polygon points="620.0,352.0 609.0,357.0 609.0,347.0" fill="#3d3d3d"/>
+<text x="590" y="372" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12" font-weight="400" fill="#6b6b6b" text-anchor="middle">QR</text>
+<path d="M845,222 L875,222" fill="none" stroke="#3d3d3d" stroke-width="1.6"/>
+<polygon points="875.0,222.0 864.0,227.0 864.0,217.0" fill="#3d3d3d"/>
+<polygon points="845.0,222.0 856.0,217.0 856.0,227.0" fill="#3d3d3d"/>
+<text x="590" y="415" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">All modules persist their data in PostgreSQL</text>
+<text x="157" y="190" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Numbered arrows: booking flow</text>
+<text x="157" y="208" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">Dashed arrow: QR invitations,</text>
+<text x="157" y="225" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#6b6b6b" text-anchor="middle">outside the booking flow</text>
+</svg>
