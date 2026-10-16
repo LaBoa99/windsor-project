@@ -116,40 +116,39 @@ Table: Impact of the change by dimension {#tbl-impact}
 
 # Risk Measurement
 
-The impact rating above measures how much the change reshapes the baseline. The risk measurement measures how likely the team is to fail to deliver the change with the effort, money, time, skills, and resources it has. It uses the team's risk metrics matrix (`artifacts/risk measurement.md`), reproduced in @tbl-risk-metrics. Each range excludes its lower bound and includes its upper bound, and the overall risk of a change is the highest level among its metrics.
+The impact rating above measures how much the change reshapes the baseline. The risk measurement measures how likely the team is to fail to deliver the change with the effort, money, time, skills, and resources it has. It uses the team's risk metrics matrix (`artifacts/risk measurement.md`), reproduced in @tbl-risk-metrics. Remaining budget is the budget left after committed costs and profit; capable members are those able to do the work that needs the least common skill of the change. Each percentage range excludes its lower bound and includes its upper bound, and the overall risk of a change is the highest level among its metrics.
 
 Table: Risk metrics and thresholds {#tbl-risk-metrics}
 
-| Metric | 100% equals | No risk | Low | Medium | High | Very high | Prohibitive |
+| Metric | Measured as | No risk | Low | Medium | High | Very high | Prohibitive |
 |---|---|---|---|---|---|---|---|
-| Effort | Planned person-hours of the project minus hours already completed | 0% | ≤&nbsp;25% | ≤&nbsp;50% | ≤&nbsp;75% | — | >&nbsp;75% |
-| Budget | Remaining budget after committed costs and profit | 0% | ≤&nbsp;10% | ≤&nbsp;25% | ≤&nbsp;30% | ≤&nbsp;40% | >&nbsp;40% |
-| Time | Sprints left until the final release | 0% | ≤&nbsp;10% | ≤&nbsp;25% | ≤&nbsp;30% | ≤&nbsp;40% | >&nbsp;40% |
-| Expertise | All team members | 0% | ≤&nbsp;20% | ≤&nbsp;30% | ≤&nbsp;60% | ≤&nbsp;80% | >&nbsp;80% |
-| Resource allocation | Remaining budget after committed costs and profit | 0% | ≤&nbsp;10% | ≤&nbsp;25% | ≤&nbsp;30% | ≤&nbsp;40% | >&nbsp;40% |
-| Legal compliance | Is the change legal? | Yes | — | — | — | — | No |
+| Effort | % of remaining person-hours | 0% | ≤&nbsp;5% | ≤&nbsp;15% | ≤&nbsp;30% | ≤&nbsp;50% | >&nbsp;50% |
+| Budget | % of remaining budget | 0% | ≤&nbsp;10% | ≤&nbsp;20% | ≤&nbsp;30% | ≤&nbsp;40% | >&nbsp;40% |
+| Time | % of sprints left | 0% | ≤&nbsp;10% | ≤&nbsp;20% | ≤&nbsp;30% | ≤&nbsp;40% | >&nbsp;40%, or a milestone moves |
+| Expertise | Capable members | 3 or more | — | 2 | 1 | Partial coverage only | Nobody, and no time to train |
+| Resource allocation | What must be acquired | All owned | Available immediately | Delivery time fits the schedule | Single supplier or long contract | — | Cannot be obtained in time |
+| Legal compliance | Legality | Yes | — | Yes, with conditions | — | — | No |
 
 @tbl-risk-cr01 applies the matrix to CR-01. The Source column gives the document, section, and table each figure comes from; "Baseline v1" is `BaseLine_Windsor_v1.pdf`.
 
 Table: Risk measurement of CR-01 {#tbl-risk-cr01}
 
-| Metric | Calculation | Result | Level | Source |
+| Metric | Measurement | Result | Level | Source |
 |---|---|---|---|---|
 | Effort | (40 h for the proxy and tunnel + 40 h for the booking view) ÷ (5 members × 26 weeks × 40 h = 5,200 h − 0 h completed) | 1.5% | **Low** | Baseline v1, *Project Team and Roles* (team table) and *Agile Approach and Schedule* (13 sprints of 2 weeks); this document, @tbl-alternatives (1 person-week) |
 | Budget | ($3,941 MXN in cash + $5,312 MXN of internal effort) ÷ $612,532 MXN remaining | 1.51% | **Low** | This document, @tbl-recurring, *One-Time Effort*, and @tbl-budget (the remaining amount already has the 25% profit subtracted) |
-| Time | 0 sprints added ÷ 13 sprints | 0% | **No risk** | Baseline v1, *Change History* D-02 and *Agile Approach and Schedule* (sprint table) |
-| Expertise | 4 of 5 members list no networking, VPN, or security skill; only the Senior Developer (lead) covers it in part through Docker and the pipeline | 80% | **Very high** | Baseline v1, *Project Team and Roles* (skills column); this document, @tbl-swot (Weaknesses) |
-| Resource allocation | $3,941 MXN to acquire (Vultr instance, DDoS protection, domain) ÷ $612,532 MXN remaining. The team, LAN servers, Docker, Nginx, and WireGuard are already owned or free | 0.64% | **Low** | This document, @tbl-recurring; Baseline v1, *Third-Party Software* and *Proposed Technologies* |
-| Legal compliance | The change adds no new kind of data processing, but it exposes the personal data of Clients and guests (RF-CLI-001, RF-INV-001) to the internet | Yes | **No risk** (assumption) | Baseline v1, *Functional Requirements* |
+| Time | 0 sprints added ÷ 13 sprints; the MVP (week 14) and the final release (week 26) do not move | 0% | **No risk** | Baseline v1, *Change History* D-02 and *Agile Approach and Schedule* (sprint table) |
+| Expertise | The least common skill is networking and VPN security (Nginx proxy, WireGuard, DNS, SSL). No member lists it; only the Senior Developer (lead) has related experience through Docker and the pipeline. The booking view needs Angular, which all three developers have | Partial coverage only | **Very high** | Baseline v1, *Project Team and Roles* (skills column); this document, @tbl-swot (Weaknesses) |
+| Resource allocation | The Vultr instance, its DDoS protection, and the Porkbun domain are bought online and available the same day; Vultr has replaceable alternatives (@tbl-alternatives). The team, LAN servers, Docker, Nginx, and WireGuard are already owned or free | Available immediately | **Low** | This document, @tbl-recurring and @tbl-alternatives; Baseline v1, *Third-Party Software* and *Proposed Technologies* |
+| Legal compliance | The change is legal, but it exposes the personal data of Clients and guests (RF-CLI-001, RF-INV-001) to the internet, which requires a privacy notice under the LFPDPPP; the baseline has none | Yes, with conditions | **Medium** | Baseline v1, *Functional Requirements*; *Ley Federal de Protección de Datos Personales en Posesión de los Particulares* |
 
-The baseline does not give every input, so the measurement rests on four assumptions:
+The baseline does not give every input, so the measurement rests on three assumptions:
 
 - **40 hours per person per week.** No document states working hours; the baseline estimates progress in user stories and has no story points.
 - **0 hours completed.** Baseline v1 has no progress statement (D-12 removed the note that the project had been frozen), so the change is measured against the full plan.
 - **1 person-week for the booking view.** The baseline estimates only the public access; the booking view is one requirement of 30 and is given the same effort.
-- **Legal compliance.** No document covers data-protection law. The rating assumes the system publishes a privacy notice as required by the *Ley Federal de Protección de Datos Personales en Posesión de los Particulares* (LFPDPPP); the baseline should add it.
 
-Overall risk: **Very high**, driven by Expertise alone. Effort, Budget, Time, and Resource allocation are Low or No risk, so the change is affordable and fits the schedule. What can make it fail is that the infrastructure work depends on one person without networking or security training, the same finding as the People rating in @tbl-impact and the Weaknesses in @tbl-swot. The risk is not prohibitive. It drops to High (60% or less) if two members, for example the Senior and Mid-level Developers, are trained on Nginx and WireGuard or pair on the proxy and tunnel in Sprints 3–4, which also gives the Senior Developer a backup.
+Overall risk: **Very high**, driven by Expertise. Effort, Budget, Time, and Resource allocation are Low or No risk, so the change is affordable, its resources are at hand, and it fits the schedule. Legal compliance is Medium: the change is viable once the system publishes a privacy notice. What can make the change fail is that the infrastructure work rests on one person whose experience only covers it in part, the same finding as the People rating in @tbl-impact and the Weaknesses in @tbl-swot. The risk is not prohibitive. It drops to High if the Senior Developer is trained on Nginx and WireGuard before Sprint 3, and to Medium if a second developer pairs on the proxy and tunnel, which also gives the Senior Developer a backup.
 
 # Deployment: Before and After
 

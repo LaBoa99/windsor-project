@@ -1,19 +1,20 @@
 # Risk Metrics Evaluation Table
 
-This matrix defines the metrics used to measure the risk of a change request, the measurement baseline of each metric (what counts as 100%), and the thresholds for each risk level.
+This matrix defines the metrics used to measure the risk of a change request, how each metric is measured, and the thresholds for each risk level.
 
-| Metric | Description | Measurement Baseline | No Risk | Low Risk | Medium Risk | High Risk | Very High Risk | Prohibitive |
+| Metric | Description | Measured as | No Risk | Low Risk | Medium Risk | High Risk | Very High Risk | Prohibitive |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Effort** | Person-hours the team needs to implement the change. | 100% = Total planned person-hours of the project – person-hours already completed | 0% | > 0% – 25% | > 25% – 50% | > 50% – 75% | — | > 75% |
-| **Budget** | Total cost of the change: cash spending plus the internal cost of the team's time. | 100% = Remaining budget, after subtracting the costs already committed and the profit | 0% | > 0% – 10% | > 10% – 25% | > 25% – 30% | > 30% – 40% | > 40% |
-| **Time** | Sprints the change adds to the schedule. | 100% = Sprints left until the final release | 0% | > 0% – 10% | > 10% – 25% | > 25% – 30% | > 30% – 40% | > 40% |
-| **Expertise** | Team members who lack a skill the change requires, based on the technical stack and skill set of each member. | 100% = All team members | 0% | > 0% – 20% | > 20% – 30% | > 30% – 60% | > 60% – 80% | > 80% |
-| **Resource Allocation** | Cost of the resources the company must acquire for the change (services, licenses, hardware), excluding the resources it already owns. | 100% = Remaining budget, after subtracting the costs already committed and the profit | 0% | > 0% – 10% | > 10% – 25% | > 25% – 30% | > 30% – 40% | > 40% |
-| **Legal Compliance** | Whether the change complies with legal regulations. | Is it legal? (Yes / No) | Yes | — | — | — | — | No |
+| **Effort** | Person-hours the team needs to implement the change. | % of (total planned person-hours of the project – person-hours already completed) | 0% | > 0% – 5% | > 5% – 15% | > 15% – 30% | > 30% – 50% | > 50% |
+| **Budget** | Total cost of the change: cash spending plus the internal cost of the team's time. | % of the remaining budget, after subtracting the costs already committed and the profit | 0% | > 0% – 10% | > 10% – 20% | > 20% – 30% | > 30% – 40% | > 40% |
+| **Time** | Sprints the change adds to the schedule. | % of the sprints left until the final release | 0% | > 0% – 10% | > 10% – 20% | > 20% – 30% | > 30% – 40% | > 40%, or a milestone moves |
+| **Expertise** | Whether the team can do the work of the change with the skills it has. | Number of team members able to do the work that requires the least common skill of the change | 3 or more | — | 2 | 1 | Partial coverage only (no member has the skill, but one has related experience) | Nobody, and there is no time to train or hire |
+| **Resource Allocation** | Whether the resources the change needs (services, licenses, hardware) can be obtained in time. | Availability of the resources the company does not already own | All already owned | Bought and available immediately | Bought with a delivery time that fits the schedule | Single supplier or long-term contract | — | Cannot be obtained in time |
+| **Legal Compliance** | Whether the change complies with legal regulations. | Is it legal? | Yes, with no new obligation | — | Yes, with conditions (a new legal obligation must be met, e.g. a privacy notice) | — | — | No |
 
 Notes:
 
-- Each range excludes its lower bound and includes its upper bound, so every value falls into exactly one level (for example, 25% is Low Risk and 25.1% is Medium Risk).
+- Each percentage range excludes its lower bound and includes its upper bound, so every value falls into exactly one level (for example, 5% is Low Risk and 5.1% is Medium Risk).
 - Profit is subtracted once: if the committed costs already include the profit, it is not subtracted again.
-- Budget counts the whole cost of the change; Resource Allocation counts only what has to be acquired, so the two metrics do not measure the same amount.
+- Budget measures the money of the change; Resource Allocation measures whether what has to be acquired can be obtained, so the two metrics do not measure the same thing.
+- Expertise counts the people who can do the work, not the people who cannot, so a specialized task that needs one capable person is not rated by the size of the team.
 - The overall risk of a change is the highest level among its metrics.
