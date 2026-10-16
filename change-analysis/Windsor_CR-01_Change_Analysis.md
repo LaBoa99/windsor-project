@@ -15,7 +15,7 @@ The change has two parts that only work together. The **functional** part adds r
 
 # Cost Analysis
 
-The change costs $3,941 MXN in cash during the first year and $4,045 MXN per year after, 0.33% of the $1,200,000 MXN budget. Its effort is absorbed by the existing team, so it adds no payroll.
+The change costs $3,941 MXN in cash during the first year and $4,045 MXN per year after: 0.33% and 0.34% of the $1,200,000 MXN budget. Its effort is absorbed by the existing team, so it adds no payroll.
 
 ## Recurring Cost
 
@@ -90,7 +90,7 @@ Table: Sections of the baseline changed from v0 to v1 {#tbl-changed}
 | General Information;<br>Justification and<br>Objective | Chain of event venues in the Monterrey area. | One event venue with six halls in a single facility that share one LAN. | D-13 | **Low.** Correction of the description; no effect on time, money, people, or modules. |
 | Project Scope | Client Management: profile, event history, event panel. | Adds the hall booking view. | D-01 | **Medium.** Modules: Client Management gains a feature. Time: absorbed in Sprints 3–4. |
 | Functional<br>Requirements | 29 requirements; no booking screen for the Client. | 30 requirements: new RF-CLI-004 "Hall booking view". The Client Management overview describes it. | D-01 | **Medium.** Modules: one new requirement; the booking flow calls five other modules without changing them. |
-| Third-Party<br>Software | Facturama only, $1,650 MXN per year. | Adds Vultr VPS with DDoS protection, Porkbun domain and SSL, and SendGrid. First year: $9,968 MXN. | D-04, D-06, D-08, D-11 | **Low.** Money: this change adds $3,941 MXN, 0.33% of the budget. Two new vendors. |
+| Third-Party<br>Software | Facturama only, $1,650 MXN per year. | Adds Vultr VPS with DDoS protection, Porkbun domain and SSL, and SendGrid. First year: $9,968 MXN. | D-04, D-06, D-08, D-11 | **Low.** Money: this change adds $3,941 MXN, 0.33% of the budget. Three new vendors: Vultr, Porkbun, and SendGrid. |
 | Proposed<br>Technologies | Docker (deployment place not defined). | Docker on the client's on-premises LAN, published through Nginx on a Vultr `vc2-1c-1gb` VPS over a VPN tunnel. | D-03, D-06 | **High.** Architecture: stack unchanged, but the deployment changes: hosting adds a VPS and a tunnel. People: the infrastructure work falls to the Senior Developer (lead). |
 | Agile Approach<br>and Schedule | Sprints 3–4: Client Management; Suppliers and Services. | Sprints 3–4 also carry the booking view and its public access. Adds a timeline figure. Milestones unchanged. | D-02, D-10 | **Medium.** Time: about 1 person-week for the public access plus one more requirement, inside Sprints 3–4; milestones unchanged. People: heavier sprint load for the same team. |
 | Identified Risks | 6 risks; third-party dependency covered Facturama only. | 8 risks: adds internet exposure and hall internet link; third-party dependency extends to SendGrid, Vultr, and Porkbun. | D-05, D-08, D-11 | **Medium.** Architecture: two new risks, one rated Med-high. People: no risk has an owner, and the people risks of v0 were not updated. |
@@ -113,6 +113,43 @@ Table: Impact of the change by dimension {#tbl-impact}
 | Money | Low | $3,941 MXN in the first year ($4,045 MXN from the second), 0.33% of the $1,200,000 MXN budget. The budget is unchanged. |
 | People | Medium | Same team and salaries, no new hires. The proxy and the tunnel fall to the Senior Developer (lead), the only member whose role covers the pipeline and Docker and already a key-person risk. No role covers networking, security, or testing, and Sprints 3–4 carry more work. @tbl-swot details the people side. |
 | Modules | Medium | 1 of 7 modules gains a requirement (Client Management, RF-CLI-004). The booking flow calls Authentication, Event Halls, Suppliers, Purchases, and Email Notifications without changing their requirements; Guests and QR Access is untouched. |
+
+# Risk Measurement
+
+The impact rating above measures how much the change reshapes the baseline. The risk measurement measures how likely the team is to fail to deliver the change with the effort, money, time, skills, and resources it has. It uses the team's risk metrics matrix (`artifacts/risk measurement.md`), reproduced in @tbl-risk-metrics. Each range excludes its lower bound and includes its upper bound, and the overall risk of a change is the highest level among its metrics.
+
+Table: Risk metrics and thresholds {#tbl-risk-metrics}
+
+| Metric | 100% equals | No risk | Low | Medium | High | Very high | Prohibitive |
+|---|---|---|---|---|---|---|---|
+| Effort | Planned person-hours of the project minus hours already completed | 0% | ≤&nbsp;25% | ≤&nbsp;50% | ≤&nbsp;75% | — | >&nbsp;75% |
+| Budget | Remaining budget after committed costs and profit | 0% | ≤&nbsp;10% | ≤&nbsp;25% | ≤&nbsp;30% | ≤&nbsp;40% | >&nbsp;40% |
+| Time | Sprints left until the final release | 0% | ≤&nbsp;10% | ≤&nbsp;25% | ≤&nbsp;30% | ≤&nbsp;40% | >&nbsp;40% |
+| Expertise | All team members | 0% | ≤&nbsp;20% | ≤&nbsp;30% | ≤&nbsp;60% | ≤&nbsp;80% | >&nbsp;80% |
+| Resource allocation | Remaining budget after committed costs and profit | 0% | ≤&nbsp;10% | ≤&nbsp;25% | ≤&nbsp;30% | ≤&nbsp;40% | >&nbsp;40% |
+| Legal compliance | Is the change legal? | Yes | — | — | — | — | No |
+
+@tbl-risk-cr01 applies the matrix to CR-01. The Source column gives the document, section, and table each figure comes from; "Baseline v1" is `BaseLine_Windsor_v1.pdf`.
+
+Table: Risk measurement of CR-01 {#tbl-risk-cr01}
+
+| Metric | Calculation | Result | Level | Source |
+|---|---|---|---|---|
+| Effort | (40 h for the proxy and tunnel + 40 h for the booking view) ÷ (5 members × 26 weeks × 40 h = 5,200 h − 0 h completed) | 1.5% | **Low** | Baseline v1, *Project Team and Roles* (team table) and *Agile Approach and Schedule* (13 sprints of 2 weeks); this document, @tbl-alternatives (1 person-week) |
+| Budget | ($3,941 MXN in cash + $5,312 MXN of internal effort) ÷ $612,532 MXN remaining | 1.51% | **Low** | This document, @tbl-recurring, *One-Time Effort*, and @tbl-budget (the remaining amount already has the 25% profit subtracted) |
+| Time | 0 sprints added ÷ 13 sprints | 0% | **No risk** | Baseline v1, *Change History* D-02 and *Agile Approach and Schedule* (sprint table) |
+| Expertise | 4 of 5 members list no networking, VPN, or security skill; only the Senior Developer (lead) covers it in part through Docker and the pipeline | 80% | **Very high** | Baseline v1, *Project Team and Roles* (skills column); this document, @tbl-swot (Weaknesses) |
+| Resource allocation | $3,941 MXN to acquire (Vultr instance, DDoS protection, domain) ÷ $612,532 MXN remaining. The team, LAN servers, Docker, Nginx, and WireGuard are already owned or free | 0.64% | **Low** | This document, @tbl-recurring; Baseline v1, *Third-Party Software* and *Proposed Technologies* |
+| Legal compliance | The change adds no new kind of data processing, but it exposes the personal data of Clients and guests (RF-CLI-001, RF-INV-001) to the internet | Yes | **No risk** (assumption) | Baseline v1, *Functional Requirements* |
+
+The baseline does not give every input, so the measurement rests on four assumptions:
+
+- **40 hours per person per week.** No document states working hours; the baseline estimates progress in user stories and has no story points.
+- **0 hours completed.** Baseline v1 has no progress statement (D-12 removed the note that the project had been frozen), so the change is measured against the full plan.
+- **1 person-week for the booking view.** The baseline estimates only the public access; the booking view is one requirement of 30 and is given the same effort.
+- **Legal compliance.** No document covers data-protection law. The rating assumes the system publishes a privacy notice as required by the *Ley Federal de Protección de Datos Personales en Posesión de los Particulares* (LFPDPPP); the baseline should add it.
+
+Overall risk: **Very high**, driven by Expertise alone. Effort, Budget, Time, and Resource allocation are Low or No risk, so the change is affordable and fits the schedule. What can make it fail is that the infrastructure work depends on one person without networking or security training, the same finding as the People rating in @tbl-impact and the Weaknesses in @tbl-swot. The risk is not prohibitive. It drops to High (60% or less) if two members, for example the Senior and Mid-level Developers, are trained on Nginx and WireGuard or pair on the proxy and tunnel in Sprints 3–4, which also gives the Senior Developer a backup.
 
 # Deployment: Before and After
 
@@ -166,8 +203,10 @@ Table: SWOT of the change, centered on the people of the project {#tbl-swot}
 
 | | Helpful | Harmful |
 |---|---|---|
-| Internal<br>(project team) | <strong>Strengths</strong><ul><li>The booking view needs no hiring or training: the three developers work with Angular, and the Senior and Mid-level Developers with NestJS and PostgreSQL.</li><li>The Senior Developer (lead) already builds the pipeline and works with Docker, so the proxy and the tunnel fit an existing role.</li><li>The Project Manager also does the UI/UX design in Figma, so the booking view is designed inside the team.</li><li>The team stays as in v0: the same five members and a monthly team cost of $77,000 MXN.</li></ul> | <strong>Weaknesses</strong><ul><li>The proxy, tunnel, DNS, and SSL fall to the Senior Developer (lead), on whom the project already rests (key-person dependency, High). Nobody is named as backup.</li><li>No member lists networking, VPN, or security skills, and the team has no infrastructure or security role, although the change exposes the system to the internet.</li><li>The team has no tester: the developers who build the booking view and the public access also test them.</li><li>The Project Manager tracks status but does not decide on resources (PM authority, Med-high), so the PM cannot guarantee the extra time in Sprints 3–4.</li><li>Sprints 3–4 go from 7 to 8 requirements plus the infrastructure work, with the same people.</li></ul> |
+| Internal<br>(project team) | <strong>Strengths</strong><ul><li>The booking view needs no hiring or training: the three developers work with Angular, and the Senior and Mid-level Developers with NestJS and PostgreSQL.</li><li>The Senior Developer (lead) already builds the pipeline and works with Docker, so the proxy and the tunnel fit an existing role.</li><li>The Project Manager also does the UI/UX design in Figma, so the booking view is designed inside the team.</li><li>The team stays as in v0: the same five members and a monthly team cost of $77,000 MXN for the four salaried members (the General Director is the owner and draws no salary).</li></ul> | <strong>Weaknesses</strong><ul><li>The proxy, tunnel, DNS, and SSL fall to the Senior Developer (lead), on whom the project already rests (key-person dependency, High). Nobody is named as backup.</li><li>No member lists networking, VPN, or security skills, and the team has no infrastructure or security role, although the change exposes the system to the internet.</li><li>The team has no tester: the developers who build the booking view and the public access also test them.</li><li>The Project Manager tracks status but does not decide on resources (PM authority, Med-high), so the PM cannot guarantee the extra time in Sprints 3–4.</li><li>Sprints 3–4 go from 7 to 8 requirements plus the infrastructure work, with the same people.</li></ul> |
 | External<br>(venue, Clients,<br>rest of the company) | <strong>Opportunities</strong><ul><li>Clients book on their own, at any time, without visiting the venue.</li><li>The venue's staff can spend less time taking bookings in person.</li><li>The Sprint Review with the client every 2 weeks lets the venue's staff validate the booking view before the MVP release.</li><li>The training planned in Sprints 9–12 can cover the booking view and what to do when the internet link fails.</li></ul> | <strong>Threats</strong><ul><li>Resource reassignment (High): staff can be moved to other work of the group without change control. If the Senior Developer is moved during Sprints 3–4, both parts of the change stop.</li><li>Client concentration (Med-high): a delay from another client can take the team's time in the sprints that carry the change.</li><li>The baseline names nobody at the venue to look after the LAN server and the internet link, on which online booking now depends.</li><li>Some Clients may keep booking in person, so the venue's staff would have to handle both ways.</li><li>Outside attackers can now reach the public proxy (internet exposure, Med-high), and responding falls on a team without a security role.</li></ul> |
+
+This SWOT looks at the people of the project: the development team, the venue's staff, and the Clients who book. The team can deliver the change with the people and skills it already has. Its weak side is that the new work lands on the Senior Developer (lead), with no backup and with no role for networking, security, or testing.
 
 # Alternatives Analyzed
 
@@ -189,7 +228,5 @@ Table: Deployment alternatives evaluated {#tbl-alternatives}
 | Hybrid write/read | Primary database on the LAN; read replica and application on Vultr | $11,848 MXN | 3.5 | 2.90 |
 
 The annual cost counts hosting only. The $3,291 MXN of the selected alternative is the Vultr cost; with the domain ($650 MXN the first year) it becomes the $3,941 MXN of @tbl-recurring. The effort counts the public access only, not the booking view, which every alternative needs.
-
-This SWOT looks at the people of the project: the development team, the venue's staff, and the Clients who book. The team can deliver the change with the people and skills it already has. Its weak side is that the new work lands on the Senior Developer (lead), with no backup and with no role for networking, security, or testing.
 
 The selected alternative fits in Sprints 3–4, leaves RNF-SEG-001 and RNF-SEG-002 unchanged, and keeps the layers and components of the architecture diagram. The hybrid write/read alternative reuses the same VPS and tunnel, so it remains the next step if the hall's internet link proves unreliable.
