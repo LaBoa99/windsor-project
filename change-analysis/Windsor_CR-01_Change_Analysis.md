@@ -127,7 +127,7 @@ Table: Risk metrics and thresholds {#tbl-risk-metrics}
 | Time | % of sprints left | 0% | ≤&nbsp;10% | ≤&nbsp;20% | ≤&nbsp;30% | ≤&nbsp;40% | >&nbsp;40%, or a milestone moves |
 | Expertise | Capable members | 3 or more | — | 2 | 1 | Partial coverage only | Nobody, and no time to train |
 | Resource allocation | What must be acquired | All owned | Available immediately | Delivery time fits the schedule | Single supplier or long contract | — | Cannot be obtained in time |
-| Legal compliance | Legality | Yes | — | Yes, with conditions | — | — | No |
+| Legal compliance | Legality | Yes | — | — | — | — | No |
 
 @tbl-risk-cr01 applies the matrix to CR-01. The Source column gives the document, section, and table each figure comes from; "Baseline v1" is `BaseLine_Windsor_v1.pdf`.
 
@@ -140,7 +140,7 @@ Table: Risk measurement of CR-01 {#tbl-risk-cr01}
 | Time | 0 sprints added ÷ 13 sprints; the MVP (week 14) and the final release (week 26) do not move | 0% | **No risk** | Baseline v1, *Change History* D-02 and *Agile Approach and Schedule* (sprint table) |
 | Expertise | The least common skill is networking and VPN security (Nginx proxy, WireGuard, DNS, SSL). No member lists it; only the Senior Developer (lead) has related experience through Docker and the pipeline. The booking view needs Angular, which all three developers have | Partial coverage only | **Very high** | Baseline v1, *Project Team and Roles* (skills column); this document, @tbl-swot (Weaknesses) |
 | Resource allocation | The Vultr instance, its DDoS protection, and the Porkbun domain are bought online and available the same day; Vultr has replaceable alternatives (@tbl-alternatives). The team, LAN servers, Docker, Nginx, and WireGuard are already owned or free | Available immediately | **Low** | This document, @tbl-recurring and @tbl-alternatives; Baseline v1, *Third-Party Software* and *Proposed Technologies* |
-| Legal compliance | The change is legal, but it exposes the personal data of Clients and guests (RF-CLI-001, RF-INV-001) to the internet, which requires a privacy notice under the LFPDPPP; the baseline has none | Yes, with conditions | **Medium** | Baseline v1, *Functional Requirements*; *Ley Federal de Protección de Datos Personales en Posesión de los Particulares* |
+| Legal compliance | The change is legal, but it exposes the personal data of Clients and guests (RF-CLI-001, RF-INV-001) to the internet. Processing that data is legal if the system publishes a privacy notice under the LFPDPPP, which the baseline does not have yet | Yes | **No risk** | Baseline v1, *Functional Requirements*; *Ley Federal de Protección de Datos Personales en Posesión de los Particulares* |
 
 The baseline does not give every input, so the measurement rests on three assumptions:
 
@@ -148,7 +148,7 @@ The baseline does not give every input, so the measurement rests on three assump
 - **0 hours completed.** Baseline v1 has no progress statement (D-12 removed the note that the project had been frozen), so the change is measured against the full plan.
 - **1 person-week for the booking view.** The baseline estimates only the public access; the booking view is one requirement of 30 and is given the same effort.
 
-Overall risk: **Very high**, driven by Expertise. Effort, Budget, Time, and Resource allocation are Low or No risk, so the change is affordable, its resources are at hand, and it fits the schedule. Legal compliance is Medium: the change is viable once the system publishes a privacy notice. What can make the change fail is that the infrastructure work rests on one person whose experience only covers it in part, the same finding as the People rating in @tbl-impact and the Weaknesses in @tbl-swot. The risk is not prohibitive. It drops to High if the Senior Developer is trained on Nginx and WireGuard before Sprint 3, and to Medium if a second developer pairs on the proxy and tunnel, which also gives the Senior Developer a backup.
+Overall risk: **Very high**, driven by Expertise. Effort, Budget, Time, and Resource allocation are Low or No risk, so the change is affordable, its resources are at hand, and it fits the schedule. Legal compliance is binary and the change is legal; the privacy notice that the LFPDPPP requires is an action of the change, not a risk level, and the baseline should add it. What can make the change fail is that the infrastructure work rests on one person whose experience only covers it in part, the same finding as the People rating in @tbl-impact and the Weaknesses in @tbl-swot. The risk is not prohibitive. It drops to High if the Senior Developer is trained on Nginx and WireGuard before Sprint 3, and to Medium if a second developer pairs on the proxy and tunnel, which also gives the Senior Developer a backup.
 
 # Deployment: Before and After
 
