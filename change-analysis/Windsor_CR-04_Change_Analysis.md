@@ -216,6 +216,33 @@ The hosted platform is faster to integrate but costs $19,742 MXN every year, and
 
 Google Street View is free, but the images become public on Google Maps under Google's rules, and the client loses control of them.
 
+# Configuration Items
+
+The change creates the items in @tbl-ci-new and modifies the items in @tbl-ci-changed. The location, date, and SHA-256 hash of each item are in the Configuration Item Register (CI-DOC-11). New items enter in state Draft and are written in the register when the CCB approves the change (SCMP, *Adding New Configuration Items*).
+
+Table: Configuration items created by CR-04 {#tbl-ci-new}
+
+| ID | Name | Location | Owner | Purpose |
+|---|---|---|---|---|
+| CI-DOC-13 | Client screen design system | Figma (supplier) | Project Manager | New design of the Client's public screens, including those of CR-02 and CR-03 |
+| CI-DOC-10 | Change analysis CR-04 (this document) | `change-analysis/` | Senior Developer | Analysis and F-01 of the change |
+| CI-IMG-16 | CR-04 tour flow | `images/` | Senior Developer | @fig-tour |
+| CI-IMG-17 | CR-04 schedule | `images/` | Project Manager | Schedule figure of this analysis |
+| CI-DOC-12 | Baseline v2 | `BaseLine_Windsor_v2.pdf` | Project Manager | Shared with CR-02 and CR-03; replaces baseline v1 |
+
+Table: Configuration items modified by CR-04 {#tbl-ci-changed}
+
+| ID | Name | Version now | After the change | Owner | What changes |
+|---|---|---|---|---|---|
+| CI-DOC-02 | Baseline v1 | v1 | Superseded by CI-DOC-12 | Project Manager | D-25 to D-27: Scope, Requirements, Deliverables, Schedule, and Third-Party Software |
+| CI-REQ-01 | Requirements list | v2 | Updated with baseline v2 | Project Manager | Adds RF-CLI-007 and RNF-USAB-002; RF-SAL-004 also stores 360° images |
+| CI-IMG-05 | Sprint schedule (Figure 1) | v1 | Updated with baseline v2 | Project Manager | Design system in Sprints 7–8; capture and viewer in Sprints 9–10 |
+| CI-CODE-02 | Client Service image | — | 2.0.0 | Senior Developer | New design of the public screens and the 360° viewer |
+| CI-CODE-03 | Hall Administration image | — | 2.0.0 | Senior Developer | Upload of 360° images and cutting into tiles |
+| CI-CFG-07 | Object Storage bucket and retention rules | 1.0.0 (MVP) | 2.0.0 | Senior Developer | Keeps the tour tiles next to the hall photos |
+
+CI-CODE-02 and CI-CODE-03 are created by CR-02 in the same release, so they have no earlier version. The 360° images are data of each hall, not configuration items.
+
 # Change Request Form (F-01)
 
 Table: Change request form of CR-04 {#tbl-f01}
@@ -224,7 +251,7 @@ Table: Change request form of CR-04 {#tbl-f01}
 |---|---|---|
 | Request | CR ID, title, date, requester | CR-04, "Screen redesign and virtual tour", 2026-11-06, client (venue owner) |
 | Request | Original request and reason | "The client requests changes to the design of the screens; it implies the use of Virtual reality to appreciate the environment of a hall." |
-| Analysis | Affected CIs | Baseline v1 (CI-DOC-02), requirements CSV (CI-REQ-01), schedule figure (CI-IMG-05), Client Service (CI-CODE-02); reuses Object Storage (CI-CFG-07) |
+| Analysis | Affected CIs | New: @tbl-ci-new. Modified: @tbl-ci-changed |
 | Analysis | Risk per metric and overall | Effort Low, Budget Low, Time No risk, Expertise High, Resource allocation Medium, Legal No risk; overall **High** |
 | Decision | Approved, rejected, or deferred | Pending CCB |
 | Implementation | Branch, PRs, D-nn | `cr-04/redesign-virtual-tour`; proposed D-25 to D-27 |

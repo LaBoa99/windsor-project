@@ -3,7 +3,7 @@ title: Configuration Item Register
 subtitle: "SCMP form F-04 for the “Windsor” Integrated Management System, with the items added by CR-02, CR-03, and CR-04"
 running_title: SCMP — Configuration Item Register — Windsor
 author: General México Software Co.
-date: 2026-11-06
+date: 2026-11-12
 lang: en
 ---
 
@@ -24,7 +24,7 @@ The Configuration Manager (Project Manager) keeps this register. Every change to
 
 - **ID:** `CI-<type>-nn`, with the types of the SCMP: DOC, REQ, IMG, CODE, DB, CFG.
 - **Version:** `v{n}`, where n is the number of commits that changed the file, so that anyone can check it with `git log --follow`. Items not committed yet are `v1` in state Draft.
-- **Date:** date of the last commit that changed the file, or 2026-11-06 for new items.
+- **Date:** date of the last commit that changed the file.
 - **SHA-256:** the first 16 hexadecimal characters of the file's hash. The full hash comes from `sha256sum <file>`. Planned items show "—".
 - **State:** Draft, Under review, Baselined, or Superseded.
 
@@ -41,10 +41,11 @@ Table: Document CIs {#tbl-ci-doc}
 | CI-DOC-05 | Risk metrics matrix | `artifacts/risk measurement.md` | v5 | 2026-10-16 | `a67fd9b9b85d32eb` | Senior Developer | Baselined | — |
 | CI-DOC-06 | SCMP: change and status accounting | `scmp/Windsor_SCMP_Change_and_Status_Accounting.md` | v1 | 2026-11-06 | `4162a1dc75880b42` | Project Manager | Under review | — |
 | CI-DOC-07 | Change analysis CR-01 | `change-analysis/Windsor_CR-01_Change_Analysis.md` | v4 | 2026-10-16 | `2c90dcc6e46edbd5` | Senior Developer | Baselined | CR-01 |
-| CI-DOC-08 | Change analysis CR-02 | `change-analysis/Windsor_CR-02_Change_Analysis.md` | v1 | 2026-11-06 | `c2a034e359128c1a` | Senior Developer | Draft | CR-02 |
-| CI-DOC-09 | Change analysis CR-03 | `change-analysis/Windsor_CR-03_Change_Analysis.md` | v1 | 2026-11-06 | `43511783f5968799` | Senior Developer | Draft | CR-03 |
-| CI-DOC-10 | Change analysis CR-04 | `change-analysis/Windsor_CR-04_Change_Analysis.md` | v1 | 2026-11-06 | `6db7f979e62fbbee` | Senior Developer | Draft | CR-04 |
-| CI-DOC-11 | Configuration Item Register (this document) | `scmp/Windsor_CI_Register.md` | v1 | 2026-11-06 | — | Project Manager | Draft | — |
+| CI-DOC-08 | Change analysis CR-02 | `change-analysis/Windsor_CR-02_Change_Analysis.md` | v2 | 2026-11-13 | `2daeb9f73a6185ea` | Senior Developer | Draft | CR-02 |
+| CI-DOC-09 | Change analysis CR-03 | `change-analysis/Windsor_CR-03_Change_Analysis.md` | v2 | 2026-11-13 | `2f3e03f4f30e261d` | Senior Developer | Draft | CR-03 |
+| CI-DOC-10 | Change analysis CR-04 | `change-analysis/Windsor_CR-04_Change_Analysis.md` | v2 | 2026-11-13 | `96149eebbb101280` | Senior Developer | Draft | CR-04 |
+| CI-DOC-11 | Configuration Item Register (this document) | `scmp/Windsor_CI_Register.md` | v1 | 2026-11-12 | — | Project Manager | Draft | — |
+| CI-DOC-14 | Consolidated change analysis CR-02 to CR-04 | `change-analysis/Windsor_CR-02-04_Consolidated_Change_Analysis.md` | v1 | 2026-11-13 | `45b668badbb6fad7` | Senior Developer | Draft | CR-02, CR-03, CR-04 |
 
 The original proposal and SRS were merged into baseline v0, so they are Superseded. The rendered PDFs of the Markdown documents are outputs of their sources, not separate items. The source of baseline v1 is not in the repository, so the PDF is the item.
 
@@ -81,25 +82,27 @@ Table: Image CIs {#tbl-ci-img}
 | CI-IMG-07 | CR-01 deployment v1 | `images/cr-01-deployment-v1.svg` | v1 | 2026-10-09 | `0bd89d550f795dfa` | Senior Developer | Baselined | CR-01 |
 | CI-IMG-08 | CR-01 booking flow | `images/cr-01-booking-flow.svg` | v1 | 2026-10-09 | `96561469fbb0af2f` | Senior Developer | Baselined | CR-01 |
 | CI-IMG-09 | CR-01 schedule | `images/cr-01-schedule.svg` | v1 | 2026-10-09 | `1c1e3268b61f3830` | Project Manager | Baselined | CR-01 |
-| CI-IMG-10 | CR-02 architecture, country view | `images/cr-02-architecture-country.svg` | v1 | 2026-11-06 | `44e93ecc78446758` | Senior Developer | Draft | CR-02 |
-| CI-IMG-11 | CR-02 architecture, site view | `images/cr-02-architecture-site.svg` | v1 | 2026-11-06 | `54539d8e91d033eb` | Senior Developer | Draft | CR-02 |
-| CI-IMG-12 | CR-02 map flow | `images/cr-02-map-flow.svg` | v1 | 2026-11-06 | `b3100ad1fda31346` | Senior Developer | Draft | CR-02 |
-| CI-IMG-13 | CR-02 schedule | `images/cr-02-schedule.svg` | v1 | 2026-11-06 | `a12a68dc73bfd21d` | Project Manager | Draft | CR-02 |
-| CI-IMG-14 | CR-03 reporting flow | `images/cr-03-reporting-flow.svg` | v1 | 2026-11-06 | `7b9b6a8562e1995f` | Senior Developer | Draft | CR-03 |
-| CI-IMG-15 | CR-03 schedule | `images/cr-03-schedule.svg` | v1 | 2026-11-06 | `c426baa0e9fa9872` | Project Manager | Draft | CR-03 |
-| CI-IMG-16 | CR-04 tour flow | `images/cr-04-tour-flow.svg` | v1 | 2026-11-06 | `5da494ee03e8b12e` | Senior Developer | Draft | CR-04 |
-| CI-IMG-17 | CR-04 schedule | `images/cr-04-schedule.svg` | v1 | 2026-11-06 | `1bd3934c0bad3525` | Project Manager | Draft | CR-04 |
+| CI-IMG-10 | CR-02 architecture, country view | `images/cr-02-architecture-country.svg` | v1 | 2026-11-12 | `44e93ecc78446758` | Senior Developer | Draft | CR-02 |
+| CI-IMG-11 | CR-02 architecture, site view | `images/cr-02-architecture-site.svg` | v1 | 2026-11-12 | `54539d8e91d033eb` | Senior Developer | Draft | CR-02 |
+| CI-IMG-12 | CR-02 map flow | `images/cr-02-map-flow.svg` | v1 | 2026-11-12 | `b3100ad1fda31346` | Senior Developer | Draft | CR-02 |
+| CI-IMG-13 | CR-02 schedule | `images/cr-02-schedule.svg` | v1 | 2026-11-12 | `a12a68dc73bfd21d` | Project Manager | Draft | CR-02 |
+| CI-IMG-14 | CR-03 reporting flow | `images/cr-03-reporting-flow.svg` | v1 | 2026-11-12 | `7b9b6a8562e1995f` | Senior Developer | Draft | CR-03 |
+| CI-IMG-15 | CR-03 schedule | `images/cr-03-schedule.svg` | v1 | 2026-11-12 | `c426baa0e9fa9872` | Project Manager | Draft | CR-03 |
+| CI-IMG-16 | CR-04 tour flow | `images/cr-04-tour-flow.svg` | v1 | 2026-11-12 | `5da494ee03e8b12e` | Senior Developer | Draft | CR-04 |
+| CI-IMG-17 | CR-04 schedule | `images/cr-04-schedule.svg` | v1 | 2026-11-12 | `1bd3934c0bad3525` | Project Manager | Draft | CR-04 |
 
 When baseline v2 is published, CI-IMG-10 and CI-IMG-11 replace CI-IMG-01 and CI-IMG-03 as the architecture and deployment figures. CI-IMG-01 and CI-IMG-03 then become Superseded.
 
-# Code, Databases, and Configuration (planned)
+# Planned Items
 
-These items are defined by the baseline and the change requests. They do not exist in this repository yet. Each one gets a version and a hash when its first pull request is merged.
+These items (baseline v2, the design system, code, databases, and configuration) are defined by the baseline and the change requests. They do not exist yet. Each one gets a version and a hash when it is created: baseline v2 when it is published, and the rest when their first pull request is merged.
 
 Table: Planned CIs {#tbl-ci-planned}
 
 | ID | Name | Location | Version | Date | SHA-256 | Owner | State | Affected by |
 |---|---|---|---|---|---|---|---|---|
+| CI-DOC-12 | Baseline v2 | `BaseLine_Windsor_v2.pdf` | — | — | — | Project Manager | Draft | CR-02, CR-03, CR-04 |
+| CI-DOC-13 | Client screen design system | Figma (supplier) | — | — | — | Project Manager | Draft | CR-04 |
 | CI-CODE-01 | Windsor monolith (NestJS and Angular) | Application repository | — | — | — | Senior Developer | Draft | CR-03 (AML module and API), CR-02 (split) |
 | CI-CODE-02 | Client Service image | Docker Hub, private repository | — | — | — | Senior Developer | Draft | CR-02, CR-03, CR-04 |
 | CI-CODE-03 | Hall Administration image | Docker Hub, private repository | — | — | — | Senior Developer | Draft | CR-02, CR-04 |

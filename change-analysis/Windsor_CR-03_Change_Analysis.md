@@ -223,6 +223,36 @@ Table: Compliance alternatives evaluated {#tbl-alternatives}
 
 Keeping the records on the LAN saves $3,948 MXN per year. The file would then depend on one server at one venue for 10 years, and the authority could not query it during a link outage.
 
+# Configuration Items
+
+The change creates the items in @tbl-ci-new and modifies the items in @tbl-ci-changed. The location, date, and SHA-256 hash of each item are in the Configuration Item Register (CI-DOC-11). New items enter in state Draft and are written in the register when the CCB approves the change (SCMP, *Adding New Configuration Items*).
+
+Table: Configuration items created by CR-03 {#tbl-ci-new}
+
+| ID | Name | Location | Owner | Purpose |
+|---|---|---|---|---|
+| CI-CFG-06 | AML module contract and settings | KYC Systems (supplier) | Project Manager | License, signing keys, and connection to the authorities' server of the purchased module ($60,000 MXN) |
+| CI-CFG-07 | Object Storage bucket and retention rules | Vultr (supplier) | Senior Developer | Keeps reports, acknowledgments, and the authority request log for 10 years, encrypted (RNF-SEG-003) |
+| CI-DOC-09 | Change analysis CR-03 (this document) | `change-analysis/` | Senior Developer | Analysis and F-01 of the change |
+| CI-IMG-14 | CR-03 reporting flow | `images/` | Senior Developer | @fig-reporting |
+| CI-IMG-15 | CR-03 schedule | `images/` | Project Manager | Schedule figure of this analysis |
+| CI-DOC-12 | Baseline v2 | `BaseLine_Windsor_v2.pdf` | Project Manager | Shared with CR-02 and CR-04; replaces baseline v1 |
+
+Table: Configuration items modified by CR-03 {#tbl-ci-changed}
+
+| ID | Name | Version now | After the change | Owner | What changes |
+|---|---|---|---|---|---|
+| CI-DOC-02 | Baseline v1 | v1 | Superseded by CI-DOC-12 | Project Manager | D-21 to D-24: Scope, Functional and Non-Functional Requirements, Third-Party Software, Schedule, and Risks |
+| CI-REQ-01 | Requirements list | v2 | Updated with baseline v2 | Project Manager | Adds RF-CLI-006, RF-COMP-005, RF-COMP-006, RF-INV-006, RNF-SEG-003, and RNF-SEG-004 |
+| CI-IMG-04 | Module communication (Figure 4) | v1 | Updated with baseline v2 | Senior Developer | Adds the AML module and the authority API |
+| CI-IMG-05 | Sprint schedule (Figure 1) | v1 | Updated with baseline v2 | Project Manager | Identification and consent in Sprints 3–4; module, report, and API in Sprints 5–6; RF-PROV-004 moves to Sprints 7–8 |
+| CI-CODE-01 | Windsor monolith | — | 1.0.0 (MVP) | Senior Developer | AML module, authority API, data gate in the booking flow, and guest consent |
+| CI-DB-01 | Site database schema | — | 1.0.0 (MVP) | Mid-level Developer | Tables for identification data, consent, and report status |
+| CI-CFG-01 | Nginx proxy configuration | — | 1.0.0 (MVP) | Senior Developer | Route to the authority API with mutual TLS |
+| CI-CODE-02 | Client Service image | — | 2.0.0 | Senior Developer | Receives the module and the API when CR-02 splits the monolith |
+
+Code, database, and configuration items have no version yet: each one gets its first version when its first pull request is merged.
+
 # Change Request Form (F-01)
 
 Table: Change request form of CR-03 {#tbl-f01}
@@ -231,7 +261,7 @@ Table: Change request form of CR-03 {#tbl-f01}
 |---|---|---|
 | Request | CR ID, title, date, requester | CR-03, "Anti-money-laundering reporting", 2026-11-06, client (venue owner) |
 | Request | Original request and reason | "The Mexican government issued a new chapter of its anti-laundering law that requires that each client who rents a hall should provide his/her personal data to the landlord for a background check by the authorities. Complying with the requirement means acquiring a software module with sophisticated cryptographic algorithms and connecting it to the authorities' server. The authorities also request additional information about the event, such as the number of attendees and the nature of the event." |
-| Analysis | Affected CIs | Baseline v1 (CI-DOC-02), requirements CSV (CI-REQ-01), schedule figure (CI-IMG-05), monolith (CI-CODE-01), Nginx configuration (CI-CFG-01); new CI-CFG-06 (AML module) and CI-CFG-07 (Object Storage) |
+| Analysis | Affected CIs | New: @tbl-ci-new. Modified: @tbl-ci-changed |
 | Analysis | Risk per metric and overall | Effort Low, Budget Medium, Time No risk, Expertise Very high, Resource allocation Medium, Legal No risk; overall **Very high** |
 | Decision | Approved, rejected, or deferred | Pending CCB. Rejecting it is not a real option: the law is in force |
 | Implementation | Branch, PRs, D-nn | `cr-03/aml-reporting`; proposed D-21 to D-24 |

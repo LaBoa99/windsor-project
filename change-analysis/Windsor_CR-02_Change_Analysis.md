@@ -271,6 +271,49 @@ The VPS proxy per venue comes close because it is cheap. It loses on availabilit
 
 Full cloud scores lowest because a venue without internet could not even validate QR codes at the door.
 
+# Configuration Items
+
+The change creates the items in @tbl-ci-new and modifies the items in @tbl-ci-changed. The location, date, and SHA-256 hash of each item are in the Configuration Item Register (CI-DOC-11). New items enter in state Draft and are written in the register when the CCB approves the change (SCMP, *Adding New Configuration Items*).
+
+Table: Configuration items created by CR-02 {#tbl-ci-new}
+
+| ID | Name | Location | Owner | Purpose |
+|---|---|---|---|---|
+| CI-CODE-02 | Client Service image | Docker Hub, private repository | Senior Developer | Public site: map, catalog, accounts, payments, and booking requests |
+| CI-CODE-03 | Hall Administration image | Docker Hub, private repository | Senior Developer | Centers, halls, photos, prices, suppliers, roles, and reports |
+| CI-CODE-04 | Sync Service image | Docker Hub, private repository | Senior Developer | Only gateway between the cloud and the sites |
+| CI-CODE-05 | Site node image | Docker Hub, private repository | Senior Developer | Bookings and QR validation on each venue's LAN; the same image for every venue |
+| CI-DB-02 | Cloud database schema | Application repository (migrations) | Mid-level Developer | Catalog, accounts, payments, and the availability each venue publishes |
+| CI-CFG-03 | Site configuration: Monterrey | Monterrey site node | Senior Developer | Settings of the first site |
+| CI-CFG-04 | Site configuration: beach venue | Beach site node | Senior Developer | Settings of the beach site |
+| CI-CFG-05 | Site configuration: mountain venue | Mountain site node | Senior Developer | Settings of the mountain site |
+| CI-CFG-08 | Docker Hub repositories and access | Docker Hub (supplier) | Senior Developer | The four private images and who can push them |
+| CI-CFG-09 | CI pipeline | Application repository (GitHub Actions) | Senior Developer | Builds the images and runs the staged rollout: QA, Monterrey, other sites |
+| CI-DOC-08 | Change analysis CR-02 (this document) | `change-analysis/` | Senior Developer | Analysis and F-01 of the change |
+| CI-IMG-10 | CR-02 architecture, country view | `images/` | Senior Developer | @fig-country; replaces Figure 2 in baseline v2 |
+| CI-IMG-11 | CR-02 architecture, site view | `images/` | Senior Developer | @fig-site; replaces Figure 3 in baseline v2 |
+| CI-IMG-12 | CR-02 map flow | `images/` | Senior Developer | Map flow figure of this analysis |
+| CI-IMG-13 | CR-02 schedule | `images/` | Project Manager | Schedule figure of this analysis |
+| CI-DOC-12 | Baseline v2 | `BaseLine_Windsor_v2.pdf` | Project Manager | Shared with CR-03 and CR-04; replaces baseline v1 |
+
+Table: Configuration items modified by CR-02 {#tbl-ci-changed}
+
+| ID | Name | Version now | After the change | Owner | What changes |
+|---|---|---|---|---|---|
+| CI-DOC-02 | Baseline v1 | v1 | Superseded by CI-DOC-12 | Project Manager | D-14 to D-20: General Information, Scope, Technologies, Requirements, Third-Party Software, Schedule, and Risks |
+| CI-REQ-01 | Requirements list | v2 | Updated with baseline v2 | Project Manager | Adds RF-SAL-006, RF-SAL-007, RF-CLI-005, and RNF-DISP-002; RF-AUTH-003 gets roles per venue; RNF-SEG-002 is relaxed for new venues |
+| CI-IMG-01 | Architecture (Figure 2) | v1 | Superseded by CI-IMG-10 | Senior Developer | Replaced by the country view |
+| CI-IMG-03 | Deployment communication (Figure 3) | v1 | Superseded by CI-IMG-11 | Senior Developer | Replaced by the site view |
+| CI-IMG-04 | Module communication (Figure 4) | v1 | Updated with baseline v2 | Senior Developer | Shows which modules run in the cloud and which in each site |
+| CI-IMG-05 | Sprint schedule (Figure 1) | v1 | Updated with baseline v2 | Project Manager | Split and Sync Service in Sprints 7–8; map, center registry, and rollout kit in Sprints 9–10 |
+| CI-CODE-01 | Windsor monolith | 1.0.0 (MVP) | 2.0.0 | Senior Developer | Split into Client Service, Hall Administration, and Site node; the repository stays one |
+| CI-DB-01 | Site database schema | 1.0.0 (MVP) | 2.0.0 | Mid-level Developer | Keeps only the bookings, availability, and blocks of the site's own halls |
+| CI-CFG-01 | Nginx proxy configuration | 1.0.0 (MVP) | 2.0.0 | Senior Developer | Forwards to the cloud services instead of the Monterrey LAN |
+| CI-CFG-02 | WireGuard tunnel configuration | 1.0.0 (MVP) | 2.0.0 | Senior Developer | One outbound tunnel per site to the Sync Service |
+| CI-CFG-07 | Object Storage bucket and retention rules | 1.0.0 (MVP) | 2.0.0 | Senior Developer | Adds the encrypted backups of each site |
+
+Versions 1.0.0 come from the MVP release, which already includes CR-03. Each new venue adds one more site configuration (CI-CFG-nn), not a new image.
+
 # Change Request Form (F-01)
 
 Table: Change request form of CR-02 {#tbl-f01}
@@ -279,7 +322,7 @@ Table: Change request form of CR-02 {#tbl-f01}
 |---|---|---|
 | Request | CR ID, title, date, requester | CR-02, "Venues across the country and location map", 2026-11-06, client (venue owner) |
 | Request | Original request and reason | "The client is buying new hall centers around the country, including beach locations and tourist mountain areas. He is requesting a map to see the different locations. Once a location is selected, the system should display the center or centers available in the city and the area." |
-| Analysis | Affected CIs | Baseline v1 (CI-DOC-02), requirements CSV (CI-REQ-01), Figures 1–4 of the baseline (CI-IMG-01, CI-IMG-03 to CI-IMG-05), monolith (CI-CODE-01), Nginx and WireGuard configuration (CI-CFG-01, CI-CFG-02); new CI-CODE-02 to CI-CODE-05, CI-DB-01, CI-DB-02, CI-CFG-03 to CI-CFG-05, CI-CFG-08, CI-CFG-09 |
+| Analysis | Affected CIs | New: @tbl-ci-new. Modified: @tbl-ci-changed |
 | Analysis | Risk per metric and overall | Effort Medium, Budget Low, Time No risk, Expertise Very high, Resource allocation Medium, Legal No risk; overall **Very high** |
 | Decision | Approved, rejected, or deferred | Pending CCB |
 | Implementation | Branch, PRs, D-nn | `cr-02/multi-site-map`; proposed D-14 to D-20 |
