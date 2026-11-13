@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" role="img">
+<title>CR-04 virtual tour capture and display flow</title>
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3d3d3d"/></marker>
+<marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1f5fad"/></marker>
+</defs>
+<rect width="1000" height="430" fill="#ffffff"/>
+<rect x="15" y="20" width="970" height="170" rx="8" fill="#fafafa" stroke="#6b6b6b" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="500.0" y="42" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#6b6b6b" text-anchor="middle">Capture and publication (once per hall)</text>
+<rect x="30" y="70" width="210" height="85" rx="6" fill="#e3ecf7" stroke="#1f5fad" stroke-width="1.4"/>
+<rect x="198" y="63" width="35" height="14" rx="3" fill="#1f5fad"/>
+<text x="215.5" y="73.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">CR-04</text>
+<text x="135.0" y="90" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">360° camera</text>
+<text x="135.0" y="109" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">Insta360 X5, owned</text>
+<text x="135.0" y="126" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">by the company</text>
+<circle cx="44" cy="70" r="10" fill="#1f5fad"/>
+<text x="44" y="74" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+<path d="M 240 112 L 270 112" fill="none" stroke="#3d3d3d" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="270" y="70" width="210" height="85" rx="6" fill="#e3ecf7" stroke="#1f5fad" stroke-width="1.4"/>
+<rect x="438" y="63" width="35" height="14" rx="3" fill="#1f5fad"/>
+<text x="455.5" y="73.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">CR-04</text>
+<text x="375.0" y="90" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Hall Administration</text>
+<text x="375.0" y="109" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">upload; cut into tiles</text>
+<text x="375.0" y="126" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">of several resolutions</text>
+<circle cx="284" cy="70" r="10" fill="#1f5fad"/>
+<text x="284" y="74" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+<path d="M 480 112 L 510 112" fill="none" stroke="#3d3d3d" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="510" y="70" width="210" height="85" rx="6" fill="#e3ecf7" stroke="#1f5fad" stroke-width="1.4"/>
+<rect x="678" y="63" width="35" height="14" rx="3" fill="#1f5fad"/>
+<text x="695.5" y="73.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">CR-03</text>
+<text x="615.0" y="90" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Object Storage</text>
+<text x="615.0" y="109" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">360° images next to</text>
+<text x="615.0" y="126" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">the hall photos</text>
+<circle cx="524" cy="70" r="10" fill="#1f5fad"/>
+<text x="524" y="74" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+<path d="M 720 112 L 750 112" fill="none" stroke="#3d3d3d" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="750" y="70" width="210" height="85" rx="6" fill="#e3ecf7" stroke="#1f5fad" stroke-width="1.4"/>
+<rect x="918" y="63" width="35" height="14" rx="3" fill="#1f5fad"/>
+<text x="935.5" y="73.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">CR-04</text>
+<text x="855.0" y="90" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12.5" font-weight="700" fill="#1a1a1a" text-anchor="middle">Client Service</text>
+<text x="855.0" y="109" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">open-source 360°</text>
+<text x="855.0" y="126" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">viewer, no license</text>
+<circle cx="764" cy="70" r="10" fill="#1f5fad"/>
+<text x="764" y="74" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+<rect x="15" y="210" width="970" height="170" rx="8" fill="#fafafa" stroke="#6b6b6b" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="500.0" y="232" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#6b6b6b" text-anchor="middle">Display on the Client's device (only when the tour is opened)</text>
+<rect x="30" y="260" width="210" height="85" rx="6" fill="#e3ecf7" stroke="#1f5fad" stroke-width="1.4"/>
+<rect x="198" y="253" width="35" height="14" rx="3" fill="#1f5fad"/>
+<text x="215.5" y="263.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">CR-04</text>
+<text x="135.0" y="280" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#1a1a1a" text-anchor="middle">Phone</text>
+<text x="135.0" y="299" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">drag or move the phone;</text>
+<text x="135.0" y="316" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">light tiles load first</text>
+<rect x="270" y="260" width="210" height="85" rx="6" fill="#e3ecf7" stroke="#1f5fad" stroke-width="1.4"/>
+<rect x="438" y="253" width="35" height="14" rx="3" fill="#1f5fad"/>
+<text x="455.5" y="263.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">CR-04</text>
+<text x="375.0" y="280" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#1a1a1a" text-anchor="middle">Computer</text>
+<text x="375.0" y="299" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">drag with the mouse;</text>
+<text x="375.0" y="316" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">zoom loads detail</text>
+<rect x="510" y="260" width="210" height="85" rx="6" fill="#e3ecf7" stroke="#1f5fad" stroke-width="1.4"/>
+<rect x="678" y="253" width="35" height="14" rx="3" fill="#1f5fad"/>
+<text x="695.5" y="263.5" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="700" fill="#ffffff" text-anchor="middle">CR-04</text>
+<text x="615.0" y="280" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#1a1a1a" text-anchor="middle">VR headset (optional)</text>
+<text x="615.0" y="299" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">same viewer, immersive</text>
+<text x="615.0" y="316" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">mode if detected</text>
+<rect x="750" y="260" width="210" height="85" rx="6" fill="#ffffff" stroke="#3d3d3d" stroke-width="1.4"/>
+<text x="855.0" y="280" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="12" font-weight="700" fill="#1a1a1a" text-anchor="middle">Fallback</text>
+<text x="855.0" y="299" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">no 360° support:</text>
+<text x="855.0" y="316" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="middle">normal photos</text>
+<path d="M 855 155 L 855 210" fill="none" stroke="#3d3d3d" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<text x="865" y="200" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9.5" font-weight="400" fill="#6b6b6b" text-anchor="start">served from the cloud</text>
+<rect x="30" y="395" width="22" height="14" rx="3" fill="#e3ecf7" stroke="#1f5fad"/>
+<text x="60" y="406" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="start">New or changed; the tag names the change request</text>
+<rect x="400" y="395" width="22" height="14" rx="3" fill="#ffffff" stroke="#3d3d3d"/>
+<text x="430" y="406" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="start">Unchanged from baseline v1</text>
+<rect x="640" y="395" width="22" height="14" rx="3" fill="#ffffff" stroke="#3d3d3d" stroke-dasharray="4 3"/>
+<text x="670" y="406" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="11" font-weight="400" fill="#6b6b6b" text-anchor="start">Planned growth</text>
+</svg>

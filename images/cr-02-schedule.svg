@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 448" width="1000" height="448" role="img">
+<title>CR-02 sprint schedule</title>
+<defs>
+<marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#3d3d3d"/></marker>
+<marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1f5fad"/></marker>
+</defs>
+<rect width="1000" height="448" fill="#ffffff"/>
+<text x="354.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S0</text>
+<text x="403.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S1</text>
+<text x="452.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S2</text>
+<text x="501.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S3</text>
+<text x="550.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S4</text>
+<text x="599.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S5</text>
+<text x="648.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S6</text>
+<text x="697.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S7</text>
+<text x="746.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S8</text>
+<text x="795.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S9</text>
+<text x="844.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S10</text>
+<text x="893.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S11</text>
+<text x="942.5" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="middle">S12</text>
+<text x="342.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">1</text>
+<text x="366.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">2</text>
+<text x="391.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">3</text>
+<text x="415.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">4</text>
+<text x="440.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">5</text>
+<text x="464.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">6</text>
+<text x="489.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">7</text>
+<text x="513.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">8</text>
+<text x="538.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">9</text>
+<text x="562.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">10</text>
+<text x="587.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">11</text>
+<text x="611.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">12</text>
+<text x="636.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">13</text>
+<text x="660.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">14</text>
+<text x="685.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">15</text>
+<text x="709.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">16</text>
+<text x="734.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">17</text>
+<text x="758.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">18</text>
+<text x="783.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">19</text>
+<text x="807.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">20</text>
+<text x="832.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">21</text>
+<text x="856.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">22</text>
+<text x="881.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">23</text>
+<text x="905.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">24</text>
+<text x="930.25" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">25</text>
+<text x="954.75" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="9" font-weight="400" fill="#6b6b6b" text-anchor="middle">26</text>
+<text x="320" y="30" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="end">Sprint</text>
+<text x="320" y="50" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10" font-weight="700" fill="#6b6b6b" text-anchor="end">Week</text>
+<path d="M 330.0 58 L 330.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 379.0 58 L 379.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 428.0 58 L 428.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 477.0 58 L 477.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 526.0 58 L 526.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 575.0 58 L 575.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 624.0 58 L 624.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 673.0 58 L 673.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 722.0 58 L 722.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 771.0 58 L 771.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 820.0 58 L 820.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 869.0 58 L 869.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 918.0 58 L 918.0 358" stroke="#dddddd" stroke-width="1"/>
+<path d="M 967.0 58 L 967.0 358" stroke="#dddddd" stroke-width="1"/>
+<text x="320" y="85" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Base architecture, CI/CD, data model, backlog</text>
+<rect x="330.0" y="74" width="49.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="109" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Authentication and Access Control</text>
+<rect x="379.0" y="98" width="98.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="133" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Event Halls</text>
+<rect x="379.0" y="122" width="98.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="157" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Client Management and hall booking view</text>
+<rect x="477.0" y="146" width="98.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="181" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Public access: Vultr proxy and VPN tunnel</text>
+<rect x="477.0" y="170" width="98.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="205" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Suppliers and Services</text>
+<rect x="477.0" y="194" width="98.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="229" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Purchases and Payments</text>
+<rect x="575.0" y="218" width="98.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="253" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Guests and QR Access Control</text>
+<rect x="575.0" y="242" width="98.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="277" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Email Notifications, cross-module integration</text>
+<rect x="673.0" y="266" width="98.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="301" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="end">Hardening, testing, UAT, training, delivery</text>
+<rect x="771.0" y="290" width="196.0" height="15" rx="3" fill="#bdbdbd"/>
+<text x="320" y="325" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#1a1a1a" text-anchor="end">Three-part split and Sync Service</text>
+<rect x="673.0" y="314" width="98.0" height="15" rx="3" fill="#1f5fad"/>
+<text x="320" y="349" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#1a1a1a" text-anchor="end">Map, center registry, site rollout kit</text>
+<rect x="771.0" y="338" width="98.0" height="15" rx="3" fill="#1f5fad"/>
+<path d="M 673.0 58 L 673.0 366" stroke="#3d3d3d" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="673.0" y="380" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#3d3d3d" text-anchor="middle">MVP release</text>
+<path d="M 967.0 58 L 967.0 366" stroke="#3d3d3d" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="967.0" y="380" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#3d3d3d" text-anchor="end">Final release</text>
+<rect x="30" y="403" width="22" height="12" rx="3" fill="#bdbdbd"/>
+<text x="60" y="413" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="start">Planned in baseline v1</text>
+<rect x="250" y="403" width="22" height="12" rx="3" fill="#1f5fad"/>
+<text x="280" y="413" font-family="DejaVu Sans, Liberation Sans, Arial, sans-serif" font-size="10.5" font-weight="400" fill="#6b6b6b" text-anchor="start">Added by CR-02</text>
+</svg>
