@@ -116,7 +116,7 @@ Table: Impact of the change by dimension {#tbl-impact}
 
 # Risk Measurement
 
-The impact rating above measures how much the change reshapes the baseline. The risk measurement measures how likely the team is to fail to deliver the change with the effort, money, time, skills, and resources it has. It uses the team's risk metrics matrix (`artifacts/risk measurement.md`), reproduced in @tbl-risk-metrics. Remaining budget is the budget left after committed costs and profit; capable members are those able to do the work that needs the least common skill of the change. Each percentage range excludes its lower bound and includes its upper bound, and the overall risk of a change is the highest level among its metrics.
+The impact rating above measures how much the change reshapes the baseline. The risk measurement measures how likely the team is to fail to deliver the change with the effort, money, time, skills, and resources it has. It uses the team's risk metrics matrix (CI-DOC-05), reproduced in @tbl-risk-metrics. Remaining budget is the budget left after committed costs and profit; capable members are those able to do the work that needs the least common skill of the change. Each percentage range excludes its lower bound and includes its upper bound, and the overall risk of a change is the highest level among its metrics.
 
 Table: Risk metrics and thresholds {#tbl-risk-metrics}
 

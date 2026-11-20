@@ -24,7 +24,7 @@ The interview with the client fixed these points:
 
 This change also closes an open item of CR-01: the privacy notice required by the LFPDPPP. Personal data of Clients and now of guests are processed, so the notice and the guests' consent become actions of this change.
 
-As a reference, the real anti-money-laundering law (LFPIORPI, article 17, section XV) already treats the rental of real estate as a vulnerable activity. After the July 2025 reform, records are kept for 10 years, and the minimum fine for not filing a report is about $1.17 million MXN.
+The law is the LFPIORPI, which treats the rental of real estate as a vulnerable activity (article 17, section XV). After the July 2025 reform, records are kept for 10 years, and the minimum fine for not filing a report is about $1.17 million MXN.
 
 # Cost Analysis
 
@@ -116,7 +116,7 @@ Table: Impact of the change by dimension {#tbl-impact}
 
 # Risk Measurement
 
-The matrix of `artifacts/risk measurement.md` is applied as in CR-01. The assumptions of CR-01 are kept:
+The risk metrics matrix (CI-DOC-05) is applied as in CR-01. The assumptions of CR-01 are kept:
 
 - 40 hours per person per week;
 - 5,200 person-hours planned;

@@ -154,7 +154,7 @@ Combined overall impact: **High** (Medium, Medium, High, High, High). Each chang
 
 # Combined Risk Measurement
 
-The matrix of `artifacts/risk measurement.md` is applied to the three changes as one, with the assumptions of CR-01:
+The risk metrics matrix (CI-DOC-05) is applied to the three changes as one, with the assumptions of CR-01:
 
 - 40 hours per person per week;
 - 5,200 person-hours planned;

@@ -125,7 +125,7 @@ Table: Impact of the change by dimension {#tbl-impact}
 
 # Risk Measurement
 
-The matrix of `artifacts/risk measurement.md` is applied as in CR-01. The assumptions of CR-01 are kept:
+The risk metrics matrix (CI-DOC-05) is applied as in CR-01. The assumptions of CR-01 are kept:
 
 - 40 hours per person per week;
 - 5,200 person-hours planned;
